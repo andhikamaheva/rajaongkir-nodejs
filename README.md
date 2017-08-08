@@ -97,7 +97,7 @@ var params = {
     destination: 114, // ID Kota atau Kabupaten Tujuan
     weight: 1700 // Berat Barang dalam gram (gr)
 };
-RajaOngkir.getJNECost(id).then(function (result){
+RajaOngkir.getJNECost(params).then(function (result){
     // Aksi ketika data Biaya berhasil ditampilkan
 }).catch(function (error){
     // Aksi ketika error terjadi
