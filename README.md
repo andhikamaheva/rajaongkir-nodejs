@@ -12,7 +12,7 @@ Silahkan baca dokumentasi di bawah ini untuk penggunaan lengkap dari RajaOngkir 
 * [Instalasi](#installation)
 * [Quick Start](#quick_start)
 * [Penggunaan](#usage)
-* [Announcements](#announcements)
+* [Pengumuman](#announcements)
 * [Cara Kontribusi](#contribute)
 * [Tentang](#about)
 * [Lisensi](#license)

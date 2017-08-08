@@ -48,7 +48,6 @@ describe('RajaOngkir Basic Package Test', function () {
                     });
                 });
 
-
                 describe('Get Specific City by ID', function () {
                     it('Should Return Specific City', function () {
                         var id = 1;
@@ -106,6 +105,7 @@ describe('RajaOngkir Basic Package Test', function () {
                         });
                     });
                 });
+
                 describe('Get RPX Shipping Cost', function () {
                     it('Should Return RPX Shipping Cost', function () {
                         var params = {
@@ -150,7 +150,6 @@ describe('RajaOngkir Basic Package Test', function () {
                         });
                     });
                 });
-
 
                 describe('Get International Origins', function () {
                     it('Should Return All International Origins', function () {
