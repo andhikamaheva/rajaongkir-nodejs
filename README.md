@@ -28,7 +28,8 @@ Silahkan baca dokumentasi di bawah ini untuk penggunaan lengkap dari RajaOngkir 
 - RajaOngkir Service (telah mendaftar di RajaOngkir.com dengan paket Starter, Basic maupun Pro dan telah memiliki **API Key**)
 
 ## Cara Instal
-Penggunaan Package RajaOngkir NodeJS membutuhkan [NPM](https://npmjs.org/). Jika Anda tidak familiar dengan NPM, Anda dapat membaca [NPM Docs](https://npmjs.org/doc/) terlebih dahulu.  If you are unfamiliar with npm, see the . NPM telah terinstal dengan NodeJS sejak node versi 0.8.x karena itu Anda mungkin sudah memilikinya.
+Penggunaan Package RajaOngkir NodeJS membutuhkan [NPM](https://npmjs.org/). Jika Anda tidak familiar dengan NPM, Anda dapat membaca [NPM Docs](https://npmjs.org/doc/) terlebih dahulu.
+Pada dasarnya NPM telah terinstal dengan Node.js sejak node versi 0.8.x karena itu Anda mungkin sudah memilikinya.
 
 ```bash
 npm install --save rajaongkir-nodejs
