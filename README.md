@@ -59,7 +59,7 @@ Terdapat beberapa Dependency yang mendukung RajaOngkir NodeJS dapat berjalan, an
 
 ### Menampilkan Seluruh Provinsi (Starter)
 ```javascript
-var RajaOngkir = require('rajaongkir-nodejs').starter('apiKey');
+var RajaOngkir = require('rajaongkir-nodejs').Starter('apiKey');
 
 RajaOngkir.getProvinces().then(function (result){
     // Aksi ketika data Provinsi berhasil ditampilkan
