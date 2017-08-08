@@ -188,3 +188,4 @@ SOFTWARE.
 [appveyor-url]: https://ci.appveyor.com/project/andhikamaheva/rajaongkir-nodejs
 [coveralls-image]: https://coveralls.io/repos/github/andhikamaheva/rajaongkir-nodejs/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/github/andhikamaheva/rajaongkir-nodejs?branch=master
+
