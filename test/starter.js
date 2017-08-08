@@ -109,7 +109,7 @@ describe('RajaOngkir Starter Package Test', function () {
         } else {
             describe('API Key doesn\'t exist', function () {
                 it('Should Return error', function () {
-
+                    apiKey.should.deep.equal('');
                 });
             })
         }
