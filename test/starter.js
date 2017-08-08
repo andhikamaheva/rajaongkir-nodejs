@@ -3,7 +3,7 @@ var assert = require('assert'),
     chai = require('chai'),
     nock = require('nock');
 
-const apiKey = 'b8f97a650a5165b9353f6a29551a6525';
+const apiKey = '';
 var assert = chai.assert;
 var expect = chai.expect;
 chai.should();
