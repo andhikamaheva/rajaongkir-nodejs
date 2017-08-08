@@ -7,7 +7,6 @@ const apiKey = '';
 var assert = chai.assert;
 var expect = chai.expect;
 chai.should();
-//b8f97a650a5165b9353f6a29551a6525
 
 describe('RajaOngkir Starter Package Test', function () {
     describe('Checking API Key', function () {
@@ -82,7 +81,7 @@ describe('RajaOngkir Starter Package Test', function () {
                             destination: 114,
                             weight: 1700
                         };
-                        return RajaOngkir.getTikiCost(params).then(function (result) {
+                        return RajaOngkir.getTIKICost(params).then(function (result) {
                             result.should.have.property('rajaongkir');
                             result.rajaongkir.status.code.should.deep.equal(200);
                             result.rajaongkir.status.description.should.deep.equal("OK");
@@ -97,7 +96,7 @@ describe('RajaOngkir Starter Package Test', function () {
                             destination: 114,
                             weight: 1700
                         };
-                        return RajaOngkir.getPosCost(params).then(function (result) {
+                        return RajaOngkir.getPOSCost(params).then(function (result) {
                             result.should.have.property('rajaongkir');
                             result.rajaongkir.status.code.should.deep.equal(200);
                             result.rajaongkir.status.description.should.deep.equal("OK");

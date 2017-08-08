@@ -117,10 +117,10 @@ Tipe akun **Starter** memiliki beberapa fitur antara lain :
 * <code>getProvinces()</code> , untuk menampilkan seluruh Provinsi 
 * <code>getProvince(idProvinsi)</code> , untuk menampilkan Provinsi berdasarkan ID / parameter ID
 * <code>getCities()</code> , untuk menampilkan seluruh Kota
-* <code>getCitie(idKota)</code> , untuk menampilkan Kota berdasarkan ID / Parameter ID
+* <code>getCity(idKota)</code> , untuk menampilkan Kota berdasarkan ID / Parameter ID
 * <code>getJNECost(params)</code> , untuk menampilkan biaya pengiriman Kurir JNE
-* <code>getPosCost(params)</code> , untuk menampilkan biaya pengiriman Kurir POS
-* <code>getTikiCost(params)</code> , untuk menampilkan biaya pengiriman Kurir TIKI
+* <code>getPOSCost(params)</code> , untuk menampilkan biaya pengiriman Kurir POS
+* <code>getTIKICost(params)</code> , untuk menampilkan biaya pengiriman Kurir TIKI
 
 
 ### Basic (Dalam Pengembangan)
