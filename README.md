@@ -12,11 +12,8 @@ Silahkan baca dokumentasi di bawah ini untuk penggunaan lengkap dari RajaOngkir 
 * [Instalasi](#installation)
 * [Quick Start](#quick_start)
 * [Penggunaan](#usage)
-* [Contoh Kasus](#use_cases)
 * [Announcements](#announcements)
-* [Roadmap](#roadmap)
 * [Cara Kontribusi](#contribute)
-* [Troubleshooting](#troubleshooting)
 * [Tentang](#about)
 * [Lisensi](#license)
 
@@ -110,21 +107,13 @@ RajaOngkir.getJNECost(id).then(function (result){
 <a name="usage"></a>
 # Penggunaan
 
-<a name="use_cases"></a>
-# Contoh Kasus
-
 <a name="announcements"></a>
 # Pengumuman
 This Package still in development progress may having trouble or not fully cover all MailChimp API.
 
-<a name="roadmap"></a>
-# Roadmap
-
 <a name="contribute"></a>
 # Cara Kontribusi
 
-<a name="troubleshooting"></a>
-# Troubleshooting
 
 <a name="about"></a>
 # Tentang
