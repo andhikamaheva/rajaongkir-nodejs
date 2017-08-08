@@ -1,55 +1,48 @@
-# MailChimp NodeJS (Under Development)
+# RajaOngkir NodeJS
 
 
-[![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
-[![Linux Build][build-image]][build-url]
-[![Windows Build][appveyor-image]][appveyor-url]
-[![Coverage Status][coveralls-image]][coveralls-url]
+[![NPM Version][npm-image]][npm-url] [![NPM Downloads][downloads-image]][downloads-url] [![Linux Build][build-image]][build-url] [![Windows Build][appveyor-image]][appveyor-url] [![Coverage Status][coveralls-image]][coveralls-url]
 
+RajaOngkir NodeJS merupakan NodeJS Package yang memudahkan pengembang perangkat lunak dalam mengkonsumsi API dari http://rajaongkir.com .
 
+Silahkan baca dokumentasi di bawah ini untuk penggunaan lengkap dari RajaOngkir NodeJS.
 
+# Daftar Isi
 
-MailChimp NodeJS is NodeJS Package allows you to quickly and easily use the MailChimp API v3 via Node.js.
-Please browse the rest of this README for further detail.
-
-We appreciate your continued support, thank you!
-
-# Table of Contents
-
-* [Installation](#installation)
+* [Instalasi](#installation)
 * [Quick Start](#quick_start)
-* [Usage](#usage)
-* [Use Cases](#use_cases)
+* [Penggunaan](#usage)
+* [Contoh Kasus](#use_cases)
 * [Announcements](#announcements)
 * [Roadmap](#roadmap)
-* [How to Contribute](#contribute)
+* [Cara Kontribusi](#contribute)
 * [Troubleshooting](#troubleshooting)
-* [About](#about)
-* [License](#license)
+* [Tentang](#about)
+* [Lisensi](#license)
 
 <a name="installation"></a>
-# Installation
+# Instalasi
 
-## Prerequisites
-- Node.js version 4, 6 or 7
-- The MailChimp service, ready to use (Verified account & has API Key)
+## Prasyarat
+- Node.js versi 4, 6 atau 7
+- RajaOngkir Service (telah mendaftar di RajaOngkir.com dengan paket Starter, Basic maupun Pro dan telah memiliki **API Key**)
 
-## Install Package
-
-The following recommended installation requires [npm](https://npmjs.org/). If you are unfamiliar with npm, see the [npm docs](https://npmjs.org/doc/). Npm comes installed with Node.js since node version 0.8.x therefore you likely already have it.
+## Cara Instal
+Penggunaan Package RajaOngkir NodeJS membutuhkan [NPM](https://npmjs.org/). Jika Anda tidak familiar dengan NPM, Anda dapat membaca [NPM Docs](https://npmjs.org/doc/) terlebih dahulu.  If you are unfamiliar with npm, see the . NPM telah terinstal dengan NodeJS sejak node versi 0.8.x karena itu Anda mungkin sudah memilikinya.
 
 ```bash
-npm install --save mailchimp-nodejs
+npm install --save rajaongkir-nodejs
 ```
 
 ## Dependencies
-There are some dependencies support this package :
+Terdapat beberapa Dependency yang mendukung RajaOngkir NodeJS dapat berjalan, antara lain :
 
 ### Main Dependencies
 * [fs](https://nodejs.org/api/fs.html)
 * [http](https://www.npmjs.com/package/http)
 * [request](https://github.com/request/request)
+* [promise](https://github.com/then/promise)
+
 
 ### Development Dependencies
 * [assert](https://github.com/defunctzombie/commonjs-assert)
@@ -65,29 +58,29 @@ There are some dependencies support this package :
 # Quick Start
 
 <a name="usage"></a>
-# Usage
+# Penggunaan
 
 <a name="use_cases"></a>
-# Use Cases
+# Contoh Kasus
 
 <a name="announcements"></a>
-# Announcements
+# Pengumuman
 This Package still in development progress may having trouble or not fully cover all MailChimp API.
 
 <a name="roadmap"></a>
 # Roadmap
 
 <a name="contribute"></a>
-# How to Contribute
+# Cara Kontribusi
 
 <a name="troubleshooting"></a>
 # Troubleshooting
 
 <a name="about"></a>
-# About
+# Tentang
 
 <a name="license"></a>
-# License
+# Lisensi
 
 **MIT License**
 
@@ -111,13 +104,13 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[build-image]: https://img.shields.io/travis/andhikamaheva/mailchimp-nodejs/master.svg?label=linux
-[build-url]: https://travis-ci.org/andhikamaheva/mailchimp-nodejs
-[npm-image]: https://badge.fury.io/js/mailchimp-nodejs.svg
-[npm-url]: https://badge.fury.io/js/mailchimp-nodejs
-[downloads-image]: https://img.shields.io/npm/dm/mailchimp-nodejs.svg
-[downloads-url]: https://npmjs.org/package/mailchimp-nodejs
-[appveyor-image]: https://img.shields.io/appveyor/ci/andhikamaheva/mailchimp-nodejs/master.svg?label=windows
-[appveyor-url]: https://ci.appveyor.com/project/andhikamaheva/mailchimp-nodejs
-[coveralls-image]: https://coveralls.io/repos/github/andhikamaheva/mailchimp-nodejs/badge.svg?branch=master
-[coveralls-url]: https://coveralls.io/github/andhikamaheva/mailchimp-nodejs?branch=master
+[build-image]: https://img.shields.io/travis/andhikamaheva/rajaongkir-nodejs/master.svg?label=linux
+[build-url]: https://travis-ci.org/andhikamaheva/rajaongkir-nodejs
+[npm-image]: https://badge.fury.io/js/rajaongkir-nodejs.svg
+[npm-url]: https://badge.fury.io/js/rajaongkir-nodejs
+[downloads-image]: https://img.shields.io/npm/dm/rajaongkir-nodejs.svg
+[downloads-url]: https://npmjs.org/package/rajaongkir-nodejs
+[appveyor-image]: https://img.shields.io/appveyor/ci/andhikamaheva/rajaongkir-nodejs/master.svg?label=windows
+[appveyor-url]: https://ci.appveyor.com/project/andhikamaheva/rajaongkir-nodejs
+[coveralls-image]: https://coveralls.io/repos/github/andhikamaheva/rajaongkir-nodejs/badge.svg?branch=master
+[coveralls-url]: https://coveralls.io/github/andhikamaheva/rajaongkir-nodejs?branch=master
