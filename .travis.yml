@@ -7,3 +7,5 @@ before_install:
 - npm install
 script:
 - npm test
+- npm run test-ci
+after_script: npm install coveralls@2.10.0 && cat ./coverage/lcov.info | coveralls

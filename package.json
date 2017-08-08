@@ -4,7 +4,8 @@
   "description": "NodeJS Client Library API RajaOngkir",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && ./node_modules/coveralls/bin/coveralls.js "
+    "test": "mocha --reporter spec --bail --check-leaks test",
+    "test-ci": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks"
   },
   "repository": {
     "type": "git",
