@@ -106,18 +106,13 @@ describe('RajaOngkir Starter Package Test', function () {
                 });
 
             });
-        }/* else {
+        } else {
             describe('API Key doesn\'t exist', function () {
-                it('Should Return error', function (done) {
-                    try {
-                        apiKey.should.deep.equal('');
-                        done();
-                    } catch (error) {
-                        done();
-                    }
+                it('Should Return error', function () {
+
                 });
             })
-        }*/
+        }
     });
 
 });
