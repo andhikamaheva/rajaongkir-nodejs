@@ -146,7 +146,7 @@ Saya sangat menghargai setiap kontribusi Anda dalam pengembangan Package RajaOng
 
 <a name="about"></a>
 # Tentang
-RajaOngkir NodeJS merupakan Package Node.js yang dapat digunakan oleh pengembang perangkat lunak dalam mengkonsumsi API http://rajaongkir.com . RajaOngkir NodeJS merupakan Package Unofficial yang dikembangkan oleh pihak eksternal RajaOngkir.com.
+RajaOngkir NodeJS merupakan Package Node.js yang dapat digunakan oleh pengembang perangkat lunak dalam mengkonsumsi API http://rajaongkir.com . RajaOngkir NodeJS merupakan Unofficial Package yang dikembangkan oleh pihak eksternal RajaOngkir.com.
 Package ini masih dalam tahap pengembangan dan mungkin terjadi beberapa error dalam penggunaanya.
 
 Info lebih lanjut Anda dapat menghubungi Andhika Maheva Wicaksono melalui email [andhikamaheva@gmail.com](mailto:andhikamaheva@gmail.com).
