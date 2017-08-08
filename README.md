@@ -1,6 +1,5 @@
 # RajaOngkir NodeJS
 
-
 [![NPM Version][npm-image]][npm-url] [![NPM Downloads][downloads-image]][downloads-url] [![Linux Build][build-image]][build-url] [![Windows Build][appveyor-image]][appveyor-url] [![Coverage Status][coveralls-image]][coveralls-url]
 
 RajaOngkir NodeJS merupakan NodeJS Package yang memudahkan pengembang perangkat lunak dalam mengkonsumsi API dari http://rajaongkir.com .
@@ -123,12 +122,12 @@ Tipe akun **Starter** memiliki beberapa fitur antara lain :
 * <code>getTIKICost(params)</code> , untuk menampilkan biaya pengiriman Kurir TIKI
 
 
-### Basic (Dalam Pengembangan)
+### Basic
 ```javascript
 var RajaOngkir = require('rajaongkir-nodejs').Basic('apiKey');
 ```
 
-### Pro (Dalam Pengembangan)
+### Pro
 ```javascript
 var RajaOngkir = require('rajaongkir-nodejs').Pro('apiKey');
 ```
