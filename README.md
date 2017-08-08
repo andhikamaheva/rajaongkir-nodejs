@@ -130,7 +130,7 @@ var RajaOngkir = require('rajaongkir-nodejs').Basic('apiKey');
 
 ### Pro (Dalam Pengembangan)
 ```javascript
-var RajaOngkir = require('rajaongkir-nodejs').Basic('apiKey');
+var RajaOngkir = require('rajaongkir-nodejs').Pro('apiKey');
 ```
 
 <a name="announcements"></a>
