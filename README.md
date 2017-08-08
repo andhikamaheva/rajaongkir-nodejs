@@ -106,17 +106,51 @@ RajaOngkir.getJNECost(id).then(function (result){
 
 <a name="usage"></a>
 # Penggunaan
+Dalam RajaOngkir NodeJS terdapat 3 jenis API yang dapat digunakan yaitu **Starter, Basic, dan Pro**.
+Untuk menjalankan masing - masing API tersebut Anda dapat menggunakan script sebagai berikut : 
+
+### Starter
+```javascript
+var RajaOngkir = require('rajaongkir-nodejs').Starter('apiKey');
+```
+Berdasarkan [dokumentasi](http://rajaongkir.com/dokumentasi) RajaOngkir.com, tipe akun **Starter** memiliki beberapa fitur antara lain :
+* <code>getProvinces()</code> , untuk menampilkan seluruh Provinsi 
+* <code>getProvince(idProvinsi)</code> , untuk menampilkan Provinsi berdasarkan ID / parameter ID
+* <code>getCities()</code> , untuk menampilkan seluruh Kota
+* <code>getCitie(idKota)</code> , untuk menampilkan Kota berdasarkan ID / Parameter ID
+* <code>getJNECost(params)</code> , untuk menampilkan biaya pengiriman Kurir JNE
+* <code>getPosCost(params)</code> , untuk menampilkan biaya pengiriman Kurir POS
+* <code>getTikiCost(params)</code> , untuk menampilkan biaya pengiriman Kurir TIKI
+
+
+### Basic
+```javascript
+var RajaOngkir = require('rajaongkir-nodejs').Basic('apiKey');
+```
+
+### Pro
+```javascript
+var RajaOngkir = require('rajaongkir-nodejs').Basic('apiKey');
+```
 
 <a name="announcements"></a>
 # Pengumuman
-This Package still in development progress may having trouble or not fully cover all MailChimp API.
+RajaOngkir NodeJS masih dalam tahap pengembangan, mungkin semua fitur tidak tercover atau masih terdapat Bug dalam penggunaan API RajaOngkir.com 
 
 <a name="contribute"></a>
 # Cara Kontribusi
+Saya sangat menghargai setiap kontribusi Anda dalam pengembangan Package RajaOngkir NodeJS.
+* Anda dapat Melaporkan issue (Kesalahan Program, Saran, dll) dengan membuat **New Issue** melalui halaman [Issue](https://github.com/andhikamaheva/rajaongkir-nodejs/issues)
+* Anda juga dapat berkontribusi untuk Package ini dengan cara [Pull Request](https://github.com/andhikamaheva/rajaongkir-nodejs/pulls) 
 
 
 <a name="about"></a>
 # Tentang
+RajaOngkir NodeJS merupakan Package Node.js yang dapat digunakan oleh pengembang perangkat lunak dalam mengkonsumsi API http://rajaongkir.com . RajaOngkir NodeJS merupakan Package Unofficial yang dikembangkan oleh pihak eksternal RajaOngkir.com.
+Package ini masih dalam tahap pengembangan dan mungkin terjadi beberapa error dalam penggunaanya.
+Info lebih lanjut Anda dapat menghubungi Andhika Maheva Wicaksono melalui email [andhikamaheva@gmail.com](mailto:andhikamaheva@gmail.com).
+
+
 
 <a name="license"></a>
 # Lisensi
