@@ -57,6 +57,55 @@ Terdapat beberapa Dependency yang mendukung RajaOngkir NodeJS dapat berjalan, an
 <a name="quick_start"></a>
 # Quick Start
 
+### Menampilkan Seluruh Provinsi (Starter)
+```javascript
+var RajaOngkir = require('rajaongkir-nodejs').starter('apiKey');
+
+RajaOngkir.getProvinces().then(function (result){
+    // Aksi ketika data Provinsi berhasil ditampilkan
+}).catch(function (error){
+    // Aksi ketika error terjadi
+});
+```
+
+### Menampilkan Spesifik Provinsi (Starter)
+```javascript
+var RajaOngkir = require('rajaongkir-nodejs').Starter('apiKey');
+
+var id = 1; // ID Provinsi
+RajaOngkir.getProvince(id).then(function (result){
+    // Aksi ketika data Provinsi berhasil ditampilkan
+}).catch(function (error){
+    // Aksi ketika error terjadi
+});
+```
+### Menampilkan Seluruh Kota (Starter)
+```javascript
+var RajaOngkir = require('rajaongkir-nodejs').Starter('apiKey');
+
+RajaOngkir.getCities().then(function (result){
+    // Aksi ketika data Kota berhasil ditampilkan
+}).catch(function (error){
+    // Aksi ketika error terjadi
+});
+```
+
+### Menghitung Biaya Kirim JNE (Starter)
+```javascript
+var RajaOngkir = require('rajaongkir-nodejs').Starter('apiKey');
+
+var params = {
+    origin: 501, // ID Kota atau Kabupaten Asal
+    destination: 114, // ID Kota atau Kabupaten Tujuan
+    weight: 1700 // Berat Barang dalam gram (gr)
+};
+RajaOngkir.getJNECost(id).then(function (result){
+    // Aksi ketika data Biaya berhasil ditampilkan
+}).catch(function (error){
+    // Aksi ketika error terjadi
+});
+```
+
 <a name="usage"></a>
 # Penggunaan
 
