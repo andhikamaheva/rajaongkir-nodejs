@@ -628,8 +628,8 @@ describe('RajaOngkir Pro Package Test', function () {
                         });
                     });
                 });
-                
-                describe('Get POS Waybill', function () {
+
+               /* describe('Get POS Waybill', function () {
                     it('Should Return POS Waybill', function () {
                         var params = {waybill: 'SOCAG00183235715'};
                         return RajaOngkir.getPOSWaybill(params).then(function (result) {
@@ -748,7 +748,7 @@ describe('RajaOngkir Pro Package Test', function () {
                             result.rajaongkir.status.description.should.deep.equal("OK");
                         });
                     });
-                });
+                });*/
 
             });
         } else {
