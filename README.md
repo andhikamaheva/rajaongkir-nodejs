@@ -106,14 +106,14 @@ RajaOngkir.getJNECost(id).then(function (result){
 
 <a name="usage"></a>
 # Penggunaan
-Dalam RajaOngkir NodeJS terdapat 3 jenis API yang dapat digunakan yaitu **Starter, Basic, dan Pro**.
-Untuk menjalankan masing - masing API tersebut Anda dapat menggunakan script sebagai berikut : 
+Dalam RajaOngkir NodeJS terdapat 3 jenis API yang dapat digunakan yaitu **Starter, Basic, dan Pro** sesuai dengan [dokumentasi](http://rajaongkir.com/dokumentasi) RajaOngkir.com.
+Untuk menjalankan masing - masing API tersebut Anda dapat menggunakan perintah sebagai berikut : 
 
 ### Starter
 ```javascript
 var RajaOngkir = require('rajaongkir-nodejs').Starter('apiKey');
 ```
-Berdasarkan [dokumentasi](http://rajaongkir.com/dokumentasi) RajaOngkir.com, tipe akun **Starter** memiliki beberapa fitur antara lain :
+Tipe akun **Starter** memiliki beberapa fitur antara lain :
 * <code>getProvinces()</code> , untuk menampilkan seluruh Provinsi 
 * <code>getProvince(idProvinsi)</code> , untuk menampilkan Provinsi berdasarkan ID / parameter ID
 * <code>getCities()</code> , untuk menampilkan seluruh Kota
