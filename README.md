@@ -27,12 +27,13 @@ Silahkan buka halaman [Wiki](https://github.com/andhikamaheva/rajaongkir-nodejs/
 
 ## Prasyarat
 - Node.js versi 4, 6 atau 7
-- RajaOngkir Service (telah mendaftar di RajaOngkir.com dengan paket Starter, Basic maupun Pro dan telah memiliki **API Key**)
+- RajaOngkir Service (telah mendaftar di RajaOngkir.com dengan akun tipe Starter, Basic maupun Pro dan telah memiliki **API Key**)
 
 ## Cara Install
 Penggunaan Package RajaOngkir Node.js membutuhkan [NPM](https://npmjs.org/). Jika Anda tidak familiar dengan NPM, Anda dapat membaca [NPM Docs](https://npmjs.org/doc/) terlebih dahulu.
 Pada dasarnya NPM telah terinstal dengan Node.js sejak node versi 0.8.x karena itu Anda mungkin sudah memilikinya.
 
+Jalankan perintah di bawah ini pada terminal Anda untuk menginstall <code>rajaongkir-nodejs</code> dan menyimpannya di file <code>package.json</code> .
 ```bash
 npm install --save rajaongkir-nodejs
 ```
@@ -45,6 +46,7 @@ Terdapat beberapa Dependency yang mendukung RajaOngkir Node.js dapat berjalan, a
 * [http](https://www.npmjs.com/package/http)
 * [request](https://github.com/request/request)
 * [promise](https://github.com/then/promise)
+* [querystring](https://github.com/Gozala/querystring)
 
 
 ### Development Dependencies
@@ -56,6 +58,7 @@ Terdapat beberapa Dependency yang mendukung RajaOngkir Node.js dapat berjalan, a
 * [mocha-lcov-reporter](https://github.com/StevenLooman/mocha-lcov-reporter)
 * [nock](https://github.com/node-nock/nock)
 * [vows](https://github.com/vowsjs/vows)
+* [standard](https://github.com/standard/standard)
 
 <a name="quick_start"></a>
 # Quick Start
@@ -119,10 +122,10 @@ Untuk menjalankan masing - masing API tersebut Anda dapat menggunakan perintah s
 var RajaOngkir = require('rajaongkir-nodejs').Starter('apiKey');
 ```
 Tipe akun **Starter** memiliki beberapa fitur antara lain : 
-* <code>getProvinces()</code> , untuk menampilkan seluruh Provinsi 
-* <code>getProvince(idProvinsi)</code> , untuk menampilkan Provinsi berdasarkan ID / parameter ID
-* <code>getCities()</code> , untuk menampilkan seluruh Kota
-* <code>getCity(idKota)</code> , untuk menampilkan Kota berdasarkan ID / Parameter ID
+* <code>getProvinces()</code> , untuk menampilkan seluruh data Provinsi 
+* <code>getProvince(idProvinsi)</code> , untuk menampilkan data Provinsi berdasarkan ID / parameter ID
+* <code>getCities()</code> , untuk menampilkan seluruh data Kota
+* <code>getCity(idKota)</code> , untuk menampilkan data Kota berdasarkan ID / Parameter ID
 * <code>getJNECost(params)</code> , untuk menampilkan biaya pengiriman Kurir JNE
 * <code>getPOSCost(params)</code> , untuk menampilkan biaya pengiriman Kurir POS
 * <code>getTIKICost(params)</code> , untuk menampilkan biaya pengiriman Kurir TIKI
@@ -132,6 +135,30 @@ Tipe akun **Starter** memiliki beberapa fitur antara lain :
 ```javascript
 var RajaOngkir = require('rajaongkir-nodejs').Basic('apiKey');
 ```
+Tipe akun **Basic** memiliki beberapa fitur antara lain :
+* <code>getProvinces()</code> , untuk menampilkan seluruh data Provinsi 
+* <code>getProvince(idProvinsi)</code> , untuk menampilkan data Provinsi berdasarkan ID / parameter ID
+* <code>getCities()</code> , untuk menampilkan seluruh data Kota
+* <code>getCity(idKota)</code> , untuk menampilkan data Kota berdasarkan ID / Parameter ID
+* <code>getJNECost(params)</code> , untuk menampilkan biaya pengiriman Kurir JNE
+* <code>getPOSCost(params)</code> , untuk menampilkan biaya pengiriman Kurir POS
+* <code>getTIKICost(params)</code> , untuk menampilkan biaya pengiriman Kurir TIKI
+* <code>getRPXCost(params)</code> , untuk menampilkan biaya pengiriman Kurir RPX
+* <code>getESLCost(params)</code> , untuk menampilkan biaya pengiriman Kurir ESL
+* <code>getPCPCost(params)</code> , untuk menampilkan biaya pengiriman Kurir PCP
+* <code>getInterOrigins()</code> , untuk menampilkan data Kota (asal pengiriman) yang tersedia untuk pengiriman internasional
+* <code>getInterOrigin(idKota)</code> , untuk menampilkan data Kota (asal pengiriman) yang tersedia untuk pengiriman internasional berdasarkan ID Kota/Kabupaten
+* <code>getInterDests()</code> , untuk menampilkan data Negara yang mendukung pengiriman internasional
+* <code>getInterDest(idNegara)</code> , untuk menampilkan data Negara yang mendukung pengiriman internasional berdasarkan ID Negara
+* <code>getTIKIInterConst(params)</code> , untuk menampilkan biaya pengiriman internasional melalui kurir TIKI
+* <code>getPOSInterCost(params)</code> , untuk menampilkan biaya pengiriman internasional melalui kurir POS
+* <code>getCurrency()</code> , untuk menampilkan informasi nilai tukar rupiah terhadap US dollar
+* <code>getJNEWaybill(params)</code> , untuk melacak/mengetahui status pengiriman berdasarkan nomor resi JNE
+
+
+
+
+
 
 ### Pro
 ```javascript
