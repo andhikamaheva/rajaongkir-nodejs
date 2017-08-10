@@ -1,13 +1,14 @@
-# RajaOngkir NodeJS
+# RajaOngkir Node.js
 
 [![NPM Version][npm-image]][npm-url] [![NPM Downloads][downloads-image]][downloads-url] [![Linux Build][build-image]][build-url] [![Windows Build][appveyor-image]][appveyor-url] [![Coverage Status][coveralls-image]][coveralls-url] [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-RajaOngkir NodeJS merupakan NodeJS Package yang memudahkan pengembang perangkat lunak dalam mengkonsumsi API dari http://rajaongkir.com .
+RajaOngkir Node.js merupakan Node.js Package yang memudahkan pengembang perangkat lunak dalam mengkonsumsi API dari http://rajaongkir.com .
 
-Silahkan baca dokumentasi di bawah ini untuk penggunaan lengkap dari RajaOngkir NodeJS.
+Silahkan baca dokumentasi di bawah ini untuk penggunaan lengkap dari RajaOngkir Node.js.
 
 # Daftar Isi
 
+* [Dokumentasi](#documentation)
 * [Instalasi](#installation)
 * [Quick Start](#quick_start)
 * [Penggunaan](#usage)
@@ -15,6 +16,11 @@ Silahkan baca dokumentasi di bawah ini untuk penggunaan lengkap dari RajaOngkir 
 * [Cara Kontribusi](#contribute)
 * [Tentang](#about)
 * [Lisensi](#license)
+
+<a name="documentation"></a>
+# Dokumentasi
+Silahkan buka halaman [Wiki](https://github.com/andhikamaheva/rajaongkir-nodejs/wiki) untuk dokumentasi penggunaan lengkap dari RajaOngkir Node.js
+
 
 <a name="installation"></a>
 # Instalasi
@@ -24,7 +30,7 @@ Silahkan baca dokumentasi di bawah ini untuk penggunaan lengkap dari RajaOngkir 
 - RajaOngkir Service (telah mendaftar di RajaOngkir.com dengan paket Starter, Basic maupun Pro dan telah memiliki **API Key**)
 
 ## Cara Install
-Penggunaan Package RajaOngkir NodeJS membutuhkan [NPM](https://npmjs.org/). Jika Anda tidak familiar dengan NPM, Anda dapat membaca [NPM Docs](https://npmjs.org/doc/) terlebih dahulu.
+Penggunaan Package RajaOngkir Node.js membutuhkan [NPM](https://npmjs.org/). Jika Anda tidak familiar dengan NPM, Anda dapat membaca [NPM Docs](https://npmjs.org/doc/) terlebih dahulu.
 Pada dasarnya NPM telah terinstal dengan Node.js sejak node versi 0.8.x karena itu Anda mungkin sudah memilikinya.
 
 ```bash
@@ -32,7 +38,7 @@ npm install --save rajaongkir-nodejs
 ```
 
 ## Dependencies
-Terdapat beberapa Dependency yang mendukung RajaOngkir NodeJS dapat berjalan, antara lain :
+Terdapat beberapa Dependency yang mendukung RajaOngkir Node.js dapat berjalan, antara lain :
 
 ### Main Dependencies
 * [fs](https://nodejs.org/api/fs.html)
@@ -105,14 +111,14 @@ RajaOngkir.getJNECost(params).then(function (result){
 
 <a name="usage"></a>
 # Penggunaan
-Dalam RajaOngkir NodeJS terdapat 3 jenis API yang dapat digunakan yaitu **Starter, Basic, dan Pro** sesuai dengan [dokumentasi](http://rajaongkir.com/dokumentasi) RajaOngkir.com.
+Dalam RajaOngkir Node.js terdapat 3 jenis API yang dapat digunakan yaitu **Starter, Basic, dan Pro** sesuai dengan [dokumentasi](http://rajaongkir.com/dokumentasi) RajaOngkir.com.
 Untuk menjalankan masing - masing API tersebut Anda dapat menggunakan perintah sebagai berikut : 
 
 ### Starter
 ```javascript
 var RajaOngkir = require('rajaongkir-nodejs').Starter('apiKey');
 ```
-Tipe akun **Starter** memiliki beberapa fitur antara lain :
+Tipe akun **Starter** memiliki beberapa fitur antara lain : 
 * <code>getProvinces()</code> , untuk menampilkan seluruh Provinsi 
 * <code>getProvince(idProvinsi)</code> , untuk menampilkan Provinsi berdasarkan ID / parameter ID
 * <code>getCities()</code> , untuk menampilkan seluruh Kota
@@ -134,18 +140,18 @@ var RajaOngkir = require('rajaongkir-nodejs').Pro('apiKey');
 
 <a name="announcements"></a>
 # Pengumuman
-RajaOngkir NodeJS masih dalam tahap pengembangan, mungkin semua fitur tidak tercover atau masih terdapat Bug dalam penggunaan API RajaOngkir.com 
+RajaOngkimumr Node.js masih dalam tahap pengembangan, mungkin semua fitur tidak tercover atau masih terdapat Bug dalam penggunaan API RajaOngkir.com 
 
 <a name="contribute"></a>
 # Cara Kontribusi
-Saya sangat menghargai setiap kontribusi Anda dalam pengembangan Package RajaOngkir NodeJS.
+Saya sangat menghargai setiap kontribusi Anda dalam pengembangan Package RajaOngkir Node.js.
 * Anda dapat Melaporkan issue (Kesalahan Program, Saran, dll) dengan membuat **New Issue** melalui halaman [Issue](https://github.com/andhikamaheva/rajaongkir-nodejs/issues)
 * Anda juga dapat berkontribusi untuk Package ini dengan cara [Pull Request](https://github.com/andhikamaheva/rajaongkir-nodejs/pulls) 
 
 
 <a name="about"></a>
 # Tentang
-RajaOngkir NodeJS merupakan Package Node.js yang dapat digunakan oleh pengembang perangkat lunak dalam mengkonsumsi API http://rajaongkir.com . RajaOngkir NodeJS merupakan Unofficial Package yang dikembangkan oleh pihak eksternal RajaOngkir.com.
+RajaOngkir NodeJS merupakan Package Node.js yang dapat digunakan oleh pengembang perangkat lunak dalam mengkonsumsi API http://rajaongkir.com . RajaOngkir Node.js merupakan Unofficial Package yang dikembangkan oleh pihak eksternal RajaOngkir.com.
 Package ini masih dalam tahap pengembangan dan mungkin terjadi beberapa error dalam penggunaanya.
 
 Info lebih lanjut Anda dapat menghubungi Andhika Maheva Wicaksono melalui email [andhikamaheva@gmail.com](mailto:andhikamaheva@gmail.com).
