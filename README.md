@@ -153,17 +153,31 @@ Tipe akun **Basic** memiliki beberapa fitur antara lain :
 * <code>getTIKIInterConst(params)</code> , untuk menampilkan biaya pengiriman internasional melalui kurir TIKI
 * <code>getPOSInterCost(params)</code> , untuk menampilkan biaya pengiriman internasional melalui kurir POS
 * <code>getCurrency()</code> , untuk menampilkan informasi nilai tukar rupiah terhadap US dollar
-* <code>getJNEWaybill(params)</code> , untuk melacak/mengetahui status pengiriman berdasarkan nomor resi JNE
-
-
-
-
-
+* <code>getJNEWaybill(params)</code> , untuk melacak / mengetahui status pengiriman berdasarkan nomor resi JNE
 
 ### Pro
 ```javascript
 var RajaOngkir = require('rajaongkir-nodejs').Pro('apiKey');
 ```
+Tipe akun **Basic** memiliki beberapa fitur antara lain :
+* <code>getProvinces()</code> , untuk menampilkan seluruh data Provinsi 
+* <code>getProvince(idProvinsi)</code> , untuk menampilkan data Provinsi berdasarkan ID / parameter ID
+* <code>getCities()</code> , untuk menampilkan seluruh data Kota
+* <code>getCity(idKota)</code> , untuk menampilkan data Kota berdasarkan ID / Parameter ID
+* <code>getJNECost(params)</code> , untuk menampilkan biaya pengiriman Kurir JNE
+* <code>getPOSCost(params)</code> , untuk menampilkan biaya pengiriman Kurir POS
+* <code>getTIKICost(params)</code> , untuk menampilkan biaya pengiriman Kurir TIKI
+* <code>getRPXCost(params)</code> , untuk menampilkan biaya pengiriman Kurir RPX
+* <code>getESLCost(params)</code> , untuk menampilkan biaya pengiriman Kurir ESL
+* <code>getPCPCost(params)</code> , untuk menampilkan biaya pengiriman Kurir PCP
+* <code>getInterOrigins()</code> , untuk menampilkan data Kota (asal pengiriman) yang tersedia untuk pengiriman internasional
+* <code>getInterOrigin(idKota)</code> , untuk menampilkan data Kota (asal pengiriman) yang tersedia untuk pengiriman internasional berdasarkan ID Kota/Kabupaten
+* <code>getInterDests()</code> , untuk menampilkan data Negara yang mendukung pengiriman internasional
+* <code>getInterDest(idNegara)</code> , untuk menampilkan data Negara yang mendukung pengiriman internasional berdasarkan ID Negara
+* <code>getTIKIInterConst(params)</code> , untuk menampilkan biaya pengiriman internasional melalui kurir TIKI
+* <code>getPOSInterCost(params)</code> , untuk menampilkan biaya pengiriman internasional melalui kurir POS
+* <code>getCurrency()</code> , untuk menampilkan informasi nilai tukar rupiah terhadap US dollar
+* <code>getJNEWaybill(params)</code> , untuk melacak / mengetahui status pengiriman berdasarkan nomor resi JNE
 
 <a name="announcements"></a>
 # Pengumuman

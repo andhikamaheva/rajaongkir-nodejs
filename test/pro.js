@@ -1,11 +1,5 @@
-var assert = require('assert'),
-  vows = require('vows'),
-  chai = require('chai'),
-  nock = require('nock')
-
+var chai = require('chai')
 const apiKey = ''
-var assert = chai.assert
-var expect = chai.expect
 chai.should()
 
 describe('RajaOngkir Pro Package Test', function () {
