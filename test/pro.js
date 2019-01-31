@@ -67,6 +67,28 @@ describe('RajaOngkir Pro Package Test', function () {
           })
         })
 
+        describe('Get All Shipping Cost', function () {
+          it('Should Return Shipping Cost With Chosen Courier', function () {
+            var params = {
+              origin: 501,
+              originType: 'city',
+              destination: 114,
+              destinationType: 'city',
+              weight: 1700,
+              length: '',
+              width: '',
+              height: '',
+              diameter: '',
+              courier: 'jne:pos:tiki'
+            }
+            return RajaOngkir.getCost(params).then(function (result) {
+              result.should.have.property('rajaongkir')
+              result.rajaongkir.status.code.should.deep.equal(200)
+              result.rajaongkir.status.description.should.deep.equal('OK')
+            })
+          })
+        })
+
         describe('Get JNE Shipping Cost', function () {
           it('Should Return JNE Shipping Cost', function () {
             var params = {
@@ -613,7 +635,7 @@ describe('RajaOngkir Pro Package Test', function () {
 
         describe('Get JNE Waybill', function () {
           it('Should Return JNE Waybill', function () {
-            var params = {waybill: 'SOCAG00183235715'}
+            var params = { waybill: 'SOCAG00183235715' }
             return RajaOngkir.getJNEWaybill(params).then(function (result) {
               result.should.have.property('rajaongkir')
               result.rajaongkir.status.code.should.deep.equal(200)
@@ -622,7 +644,7 @@ describe('RajaOngkir Pro Package Test', function () {
           })
         })
 
-               /* describe('Get POS Waybill', function () {
+        /* describe('Get POS Waybill', function () {
                     it('Should Return POS Waybill', function () {
                         var params = {waybill: 'SOCAG00183235715'};
                         return RajaOngkir.getPOSWaybill(params).then(function (result) {
