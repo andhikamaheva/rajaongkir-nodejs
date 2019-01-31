@@ -68,7 +68,7 @@ describe('RajaOngkir Pro Package Test', function () {
         })
 
         describe('Get All Shipping Cost', function () {
-          it('Should Return Shipping Cost With Chosen Courier', function () {
+          it('Should Return Shipping Costs With Chosen Couriers', function () {
             var params = {
               origin: 501,
               originType: 'city',
@@ -81,7 +81,7 @@ describe('RajaOngkir Pro Package Test', function () {
               diameter: '',
               courier: 'jne:pos:tiki'
             }
-            return RajaOngkir.getCost(params).then(function (result) {
+            return RajaOngkir.getCosts(params).then(function (result) {
               result.should.have.property('rajaongkir')
               result.rajaongkir.status.code.should.deep.equal(200)
               result.rajaongkir.status.description.should.deep.equal('OK')
