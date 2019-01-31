@@ -9,3 +9,6 @@ script:
 - npm test
 - npm run test-ci
 after_script: npm install coveralls@2.10.0 && cat ./coverage/lcov.info | coveralls
+env:
+  global:
+    - secure: "nRTDzmE+x1ux0+Dg+rhgcSGECE60VgkIKIfrFoP+L4qzU0aXTqtY+w5IJcNrDGreRFx/AO7wG0zpNp4OZ+o7EfR1qyCcF+LKQS43IMa0+vO2u48Fw6+VDwglJ+ZYFU+/lT1RcPZgoDYi/OPk3VcIl9aVncvKEGvq/JOCH2vvThPD84nXiHjWKizOr41vqIlcUaykmmWwHwGdXmg/hIeCO76GHfc5O7JwmFNAT4HoVmYJpGyjyKX4olQ1IOfloiDKRk05OTyI3G+Q0k26IzYeNNHDIxmfX5epkMu75wJ5t0D/gfW4T8WY8HM3n/mbJFO5tuimlbtPZor7sIUWsh+VO5E3fz0eka8HpqK35Tck5a776HEz6hDOD3d/D5tWkLQ+H4u2yh8tdYS0cxLF3gkjh6g9oLR4GQ1VMzmNdR49CMGLYaBQkhLBi4+K2Jo8J/0G15P+FFZVBIdCriV6NnOEGTwYwnnq/Bv1OFzapPwZajb9esBkhit5+tw8AO8oq8/T8SI+6AUFxX+H7coGtDRB6r3muRLwyepwwiJIRP15cKQNWHL4yHzYEgBQIkCXN1IkInz4mN33+r8FMeqHMaHA4e4d4YRatiz+CESbvVS61vg1kmgu5VGwnKikxhEpnUIzDvkDCM1fqYUfdZ5pBj9UmtRutBbwuJ0XTORAunobebw="

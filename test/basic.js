@@ -1,9 +1,12 @@
-var assert = require('assert'),
-  vows = require('vows'),
-  chai = require('chai'),
-  nock = require('nock')
+var assert = require('assert')
 
-const apiKey = ''
+var vows = require('vows')
+
+var chai = require('chai')
+
+var nock = require('nock')
+
+const apiKey = process.env.API_KEY
 var assert = chai.assert
 var expect = chai.expect
 chai.should()
@@ -191,7 +194,7 @@ describe('RajaOngkir Basic Package Test', function () {
           })
         })
 
-                /*  describe('Get TIKI International Shipping Cost', function () {
+        /*  describe('Get TIKI International Shipping Cost', function () {
                       it('Should Return TIKI International Shipping Cost', function () {
                           var params = {
                               origin: 152,
@@ -233,7 +236,7 @@ describe('RajaOngkir Basic Package Test', function () {
 
         describe('Get JNE Waybill', function () {
           it('Should Return JNE Waybill', function () {
-            var params = {waybill: 'SOCAG00183235715'}
+            var params = { waybill: 'SOCAG00183235715' }
             return RajaOngkir.getJNEWaybill(params).then(function (result) {
               result.should.have.property('rajaongkir')
               result.rajaongkir.status.code.should.deep.equal(200)

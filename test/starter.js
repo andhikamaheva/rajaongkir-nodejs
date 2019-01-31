@@ -1,9 +1,12 @@
-var assert = require('assert'),
-  vows = require('vows'),
-  chai = require('chai'),
-  nock = require('nock')
+var assert = require('assert')
 
-const apiKey = ''
+var vows = require('vows')
+
+var chai = require('chai')
+
+var nock = require('nock')
+
+const apiKey = process.env.API_KEY
 var assert = chai.assert
 var expect = chai.expect
 chai.should()

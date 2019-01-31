@@ -1,5 +1,5 @@
 var chai = require('chai')
-const apiKey = ''
+const apiKey = process.env.API_KEY
 chai.should()
 
 describe('RajaOngkir Pro Package Test', function () {
@@ -67,7 +67,7 @@ describe('RajaOngkir Pro Package Test', function () {
           })
         })
 
-        describe('Get All Shipping Cost', function () {
+        describe('Get All Shipping Costs', function () {
           it('Should Return Shipping Costs With Chosen Couriers', function () {
             var params = {
               origin: 501,
