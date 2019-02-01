@@ -164,6 +164,7 @@ Tipe akun **Basic** memiliki beberapa fitur antara lain :
 * <code>getProvince(idProvinsi)</code> untuk menampilkan data Provinsi berdasarkan ID / parameter ID
 * <code>getCities()</code> untuk menampilkan seluruh data Kota
 * <code>getCity(idKota)</code> untuk menampilkan data Kota berdasarkan ID / Parameter ID
+* <code>getCosts(params)</code> untuk menampilkan biaya pengiriman dari beberapa layanan pengiriman (kurir)
 * <code>getJNECost(params)</code> untuk menampilkan biaya pengiriman Kurir JNE
 * <code>getPOSCost(params)</code> untuk menampilkan biaya pengiriman Kurir POS
 * <code>getTIKICost(params)</code> untuk menampilkan biaya pengiriman Kurir TIKI
