@@ -11,8 +11,8 @@ describe('RajaOngkir Pro Package Test', function () {
         })
         var RajaOngkir = require('../index').Pro(apiKey)
 
-        describe('Get All Provinces', function (done) {
-          it('Should Return All Provinces', function () {
+        describe('Get All Provinces', function () {
+          it('Should Return All Provinces', function (done) {
             return RajaOngkir.getProvinces().then(function (result) {
               result.should.have.property('rajaongkir')
               result.rajaongkir.status.code.should.deep.equal(200)
