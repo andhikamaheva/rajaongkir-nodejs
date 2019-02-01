@@ -533,7 +533,7 @@ describe('RajaOngkir Pro Package Test', function () {
           })
         })
 
-        describe('Get TIKI International Shipping Cost', function () {
+        /*   describe('Get TIKI International Shipping Cost', function () {
           it('Should Return TIKI International Shipping Cost', function () {
             var params = {
               origin: 152,
@@ -567,7 +567,7 @@ describe('RajaOngkir Pro Package Test', function () {
               result.rajaongkir.status.description.should.deep.equal('OK')
             })
           })
-        })
+        }) */
 
         describe('Get JNE International Shipping Cost', function () {
           it('Should Return JNE International Shipping Cost', function () {

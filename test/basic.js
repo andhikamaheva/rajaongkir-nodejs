@@ -195,21 +195,21 @@ describe('RajaOngkir Basic Package Test', function () {
         })
 
         /*  describe('Get TIKI International Shipping Cost', function () {
-                      it('Should Return TIKI International Shipping Cost', function () {
-                          var params = {
-                              origin: 152,
-                              destination: 108,
-                              weight: 1400
-                          };
-                          return RajaOngkir.getTIKIInterConst(params).then(function (result) {
-                              result.should.have.property('rajaongkir');
-                              result.rajaongkir.status.code.should.deep.equal(200);
-                              result.rajaongkir.status.description.should.deep.equal("OK");
-                          });
-                      });
-                  }); */
+          it('Should Return TIKI International Shipping Cost', function () {
+            var params = {
+              origin: 152,
+              destination: 108,
+              weight: 1400
+            }
+            return RajaOngkir.getTIKIInterConst(params).then(function (result) {
+              result.should.have.property('rajaongkir')
+              result.rajaongkir.status.code.should.deep.equal(200)
+              result.rajaongkir.status.description.should.deep.equal('OK')
+            })
+          })
+        }) */
 
-        describe('Get POS International Shipping Cost', function () {
+        /*  describe('Get POS International Shipping Cost', function () {
           it('Should Return POS International Shipping Cost', function () {
             var params = {
               origin: 152,
@@ -222,7 +222,7 @@ describe('RajaOngkir Basic Package Test', function () {
               result.rajaongkir.status.description.should.deep.equal('OK')
             })
           })
-        })
+        }) */
 
         describe('Get Currency', function () {
           it('Should Return Currency', function () {
