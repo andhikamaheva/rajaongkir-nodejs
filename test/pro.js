@@ -11,50 +11,50 @@ describe('RajaOngkir Pro Package Test', function () {
         })
         var RajaOngkir = require('../index').Pro(apiKey)
 
-        describe('Get All Provinces', function () {
+        describe('Get All Provinces', function (done) {
           it('Should Return All Provinces', function () {
             return RajaOngkir.getProvinces().then(function (result) {
               result.should.have.property('rajaongkir')
               result.rajaongkir.status.code.should.deep.equal(200)
               result.rajaongkir.status.description.should.deep.equal('OK')
-            })
+            }).catch(done)
           })
         })
 
         describe('Get Specific Province by ID', function () {
-          it('Should Return Specific Province', function () {
+          it('Should Return Specific Province', function (done) {
             var id = 1
             return RajaOngkir.getProvince(id).then(function (result) {
               result.should.have.property('rajaongkir')
               result.rajaongkir.status.code.should.deep.equal(200)
               result.rajaongkir.status.description.should.deep.equal('OK')
-            })
+            }).catch(done)
           })
         })
 
         describe('Get All Cities', function () {
-          it('Should Return All Cities', function () {
+          it('Should Return All Cities', function (done) {
             return RajaOngkir.getCities().then(function (result) {
               result.should.have.property('rajaongkir')
               result.rajaongkir.status.code.should.deep.equal(200)
               result.rajaongkir.status.description.should.deep.equal('OK')
-            })
+            }).catch(done)
           })
         })
 
         describe('Get Specific City by ID', function () {
-          it('Should Return Specific City', function () {
+          it('Should Return Specific City', function (done) {
             var id = 1
             return RajaOngkir.getCity(id).then(function (result) {
               result.should.have.property('rajaongkir')
               result.rajaongkir.status.code.should.deep.equal(200)
               result.rajaongkir.status.description.should.deep.equal('OK')
-            })
+            }).catch(done)
           })
         })
 
         describe('Get Specific Subdistrict by ID', function () {
-          it('Should Return Specific Subdistrict', function () {
+          it('Should Return Specific Subdistrict', function (done) {
             var params = {
               city: 1,
               id: 1
@@ -63,12 +63,12 @@ describe('RajaOngkir Pro Package Test', function () {
               result.should.have.property('rajaongkir')
               result.rajaongkir.status.code.should.deep.equal(200)
               result.rajaongkir.status.description.should.deep.equal('OK')
-            })
+            }).catch(done)
           })
         })
 
         describe('Get All Shipping Costs', function () {
-          it('Should Return Shipping Costs With Chosen Couriers', function () {
+          it('Should Return Shipping Costs With Chosen Couriers', function (done) {
             var params = {
               origin: 501,
               originType: 'city',
@@ -85,7 +85,7 @@ describe('RajaOngkir Pro Package Test', function () {
               result.should.have.property('rajaongkir')
               result.rajaongkir.status.code.should.deep.equal(200)
               result.rajaongkir.status.description.should.deep.equal('OK')
-            })
+            }).catch(done)
           })
         })
 
