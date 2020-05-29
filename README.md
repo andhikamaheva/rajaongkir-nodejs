@@ -121,6 +121,37 @@ RajaOngkir.getJNECost(params).then(function (result){
     // Aksi ketika error terjadi
 });
 ```
+### Menghitung Biaya Kirim TIKI (Starter)
+```javascript
+var RajaOngkir = require('rajaongkir-nodejs').Starter('apiKey');
+
+var params = {
+    origin: 501, // ID Kota atau Kabupaten Asal
+    destination: 114, // ID Kota atau Kabupaten Tujuan
+    weight: 1700 // Berat Barang dalam gram (gr)
+};
+RajaOngkir.getTIKICost(params).then(function (result){
+    // Aksi ketika data Biaya berhasil ditampilkan
+}).catch(function (error){
+    // Aksi ketika error terjadi
+});
+```
+
+### Menghitung Biaya Kirim POS (Starter)
+```javascript
+var RajaOngkir = require('rajaongkir-nodejs').Starter('apiKey');
+
+var params = {
+    origin: 501, // ID Kota atau Kabupaten Asal
+    destination: 114, // ID Kota atau Kabupaten Tujuan
+    weight: 1700 // Berat Barang dalam gram (gr)
+};
+RajaOngkir.getPOSCost(params).then(function (result){
+    // Aksi ketika data Biaya berhasil ditampilkan
+}).catch(function (error){
+    // Aksi ketika error terjadi
+});
+```
 
 <a name="usage"></a>
 # Penggunaan
