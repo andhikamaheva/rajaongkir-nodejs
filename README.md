@@ -95,6 +95,16 @@ RajaOngkir.getCities().then(function (result){
     // Aksi ketika error terjadi
 });
 ```
+### Menampilkan Spesifik Kota (Starter)
+```javascript
+var RajaOngkir = require('rajaongkir-nodejs').Starter('apiKey');
+
+var id = 1; // ID Kota
+RajaOngkir.getCity(id).then(function (result){
+    // Aksi ketika data Kota berhasil ditampilkan
+}).catch(function (error){
+    // Aksi ketika error terjadi
+});
 
 ### Menghitung Biaya Kirim JNE (Starter)
 ```javascript
