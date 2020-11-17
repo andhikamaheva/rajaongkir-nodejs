@@ -89,6 +89,28 @@ describe('RajaOngkir Pro Package Test', function () {
           })
         })
 
+        describe('Get Courier Shipping Cost', function () {
+          it('Should Return Courier Shipping Cost', function () {
+            var params = {
+              origin: 501,
+              originType: 'city',
+              destination: 114,
+              destinationType: 'city',
+              weight: 1700,
+              length: '',
+              width: '',
+              height: '',
+              diameter: ''
+              courier: 'jne',
+            }
+            return RajaOngkir.getCost(params).then(function (result) {
+              result.should.have.property('rajaongkir')
+              result.rajaongkir.status.code.should.deep.equal(200)
+              result.rajaongkir.status.description.should.deep.equal('OK')
+            })
+          })
+        })
+
         describe('Get JNE Shipping Cost', function () {
           it('Should Return JNE Shipping Cost', function () {
             var params = {
